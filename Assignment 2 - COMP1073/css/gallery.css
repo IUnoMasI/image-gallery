@@ -1,0 +1,65 @@
+﻿/* Basic styling for body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Styling for the image gallery section */
+section#gallery {
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+/* Styling for the featured image */
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+    figure img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+/* Styling for the figcaption */
+figcaption {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #333;
+}
+
+/* Styling for the thumbnail list */
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+    ul li {
+        margin: 10px;
+    }
+
+    /* Styling for the thumbnails */
+    ul img {
+        filter: grayscale(100%);
+        transition: filter 0.3s ease;
+        cursor: pointer;
+    }
+
+        ul img.active {
+            filter: grayscale(0%);
+            border: 2px solid #333;
+            transition: filter 0.3s ease, border 0.3s ease;
+        }
+
+        /* Add hover effect to thumbnails */
+        ul img:hover {
+            filter: grayscale(0%);
+            border: 2px solid #999;
+        }
